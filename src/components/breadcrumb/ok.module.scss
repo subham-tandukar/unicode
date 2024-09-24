@@ -1,0 +1,20 @@
+.breadcrumb {
+  @apply flex py-4;
+  ul {
+    @apply flex flex-wrap gap-[25px];
+    li {
+      @apply relative text-[13px];
+      a {
+        @apply text-[#888] hover:text-[#4e4e4e];
+      }
+      &.active {
+        @apply text-ok-blue;
+      }
+      &:not(:last-child)::after {
+        @apply absolute top-0 w-[10px] h-[10px] -right-5 opacity-50;
+        content: url("../../../public/img/arrow-right.svg");
+        filter: invert(1) brightness(0);
+      }
+    }
+  }
+}

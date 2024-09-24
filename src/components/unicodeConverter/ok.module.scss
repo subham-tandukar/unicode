@@ -1,0 +1,6 @@
+.translate-icon {
+  @apply flex items-center;
+  & > div {
+    @apply size-5 rounded bg-secondary-foreground flex justify-center items-center;
+  }
+}

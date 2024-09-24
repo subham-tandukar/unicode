@@ -1,0 +1,22 @@
+.site-header {
+  @apply bg-white py-5;
+}
+.site-logo img {
+  @apply w-[170px] sm:w-[200px] h-auto;
+}
+.site-nav {
+  @apply bg-ok-gradient text-white;
+  ul {
+    @apply flex;
+
+    & > li {
+      & > a {
+        @apply text-sm p-3 font-semibold block transition-all duration-75 ease-linear hover:text-[#87f8ff];
+      }
+
+      &.current-page > a {
+        @apply text-[#87f8ff] bg-[#ffffff24];
+      }
+    }
+  }
+}

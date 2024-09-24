@@ -1,0 +1,66 @@
+.footer {
+  @apply bg-ok-footer-bg text-white py-[30px] sm:py-[50px] md:py-[60px] font-ok-mukta;
+}
+.info-col {
+  @apply max-w-[400px] mr-10 basis-[100%] lg:basis-0 lg:flex-[2] order-5 lg:order-[0];
+}
+
+.foot-list {
+  @apply flex-[1] basis-[50%] md:basis-[25%] lg:basis-0 mb-[30px] md:mb-0;
+  h4 {
+    @apply font-semibold mb-5 text-lg;
+  }
+  ul {
+    @apply m-0 p-0;
+    li {
+      @apply list-none mb-[15px];
+      a {
+        @apply transition-all duration-75 ease-linear block font-normal text-[#ffffffad] text-sm leading-[100%] hover:text-[#fff];
+      }
+    }
+  }
+}
+
+
+.foot-logo {
+  @apply mb-[30px];
+  & > a > img {
+    @apply w-[240px] h-auto;
+  }
+}
+
+.director-info {
+  @apply mb-[30px] text-base flex flex-wrap gap-y-5;
+  & > .item {
+    @apply text-[#ffffffcc] mr-[30px] flex-none;
+
+    & label {
+      @apply font-light block mb-[10px] text-sm;
+    }
+
+    & > span {
+      @apply font-medium block ml-auto;
+    }
+  }
+}
+
+.contact-info {
+  @apply mb-[30px] text-sm font-normal text-[#ffffffcc];
+
+  & > span {
+    @apply block mb-[10px];
+  }
+}
+
+.social-brands {
+  @apply mb-[30px] flex;
+
+  & > a {
+    @apply h-[30px] w-[30px] rounded-full bg-[#ffffff3d] text-center text-inherit text-sm flex items-center justify-center mr-[10px];
+  }
+}
+
+.copyright {
+  @apply text-xs font-normal text-[#ffffffad];
+}
+
